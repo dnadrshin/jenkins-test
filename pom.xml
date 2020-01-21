@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.epo.patent-information</groupId>
+	<artifactId>new-espacenet-gui</artifactId>
+	<version>1.8.0-SNAPSHOT</version>
+	<name>NE - New Espacenet</name>
+
+	<ciManagement>
+		<system>jenkins</system>
+	</ciManagement>
+
+	<properties>
+		<ASSET_CACHE_VERSION>1_8_0</ASSET_CACHE_VERSION>
+		
+		<!-- The application root folder -->
+		<BASE_URL>beta</BASE_URL>
+		<!-- The application root url -->
+		<APP_URL>patent</APP_URL>
+
+		<!-- Dependencies -->
+		<new-espacenet-static.version>1.8.0-SNAPSHOT</new-espacenet-static.version>
+
+
+		<buildNumber>${maven.build.timestamp}</buildNumber>
+		<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+
+		<!-- *** Default Firefox configuration for Jenkins server (UNIX) *** -->
+		<FIREFOX_BIN>/work/firefox/firefox</FIREFOX_BIN>
+	</properties>
+
+	<developers>
+		<developer>
+			<id>dn</id>
+			<name>Dmitrii Nadrshin</name>
+			<email>dimankaliningrad@gmail.com</email>
+			<organization>SaM</organization>
+			<roles>
+				<role>Dev</role>
+			</roles>
+		</developer>
+	</developers>
+</project>
